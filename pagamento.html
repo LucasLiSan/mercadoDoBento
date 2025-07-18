@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="css/stylePagamento.css">
+            <title>Pagamento</title>
+        </head>
+        <body>
+            <h1>CAIXA</h1>
+            <section class="cashier">
+                <div class="view">
+                    <img src="assets/imgs/barcode-scan.png" alt="">
+                    <div class="list">
+                        <div class="list-buy">
+                            lista
+                        </div>
+                        <div class="total-buy">
+                            total
+                        </div>
+                    </div>
+                </div>
+                <div class="infos">
+                    <div class="barCodeGroup">
+                        <label for="barCode">Código de Barra</label>
+                        <input type="text" name="barCode" id="barCode">
+                    </div>
+                    <div class="itemGroup">
+                        <label for="itemName">Item</label>
+                        <input type="text" name="itemName" id="itemName">
+                    </div>
+                    <div class="qtdGroup">
+                        <label for="qtdItem">Quantidade</label>
+                        <input type="number" name="qtdItem" id="qtdItem">
+                    </div>
+                    <div class="priceGroup">
+                        <label for="priceItem">Preço do produto</label>
+                        <input type="number" name="priceItem" id="priceItem">
+                    </div>
+                    <div class="totalGroup">
+                        <label for="priceTotal">Total a pagar item</label>
+                        <input type="number" name="priceTotal" id="priceTotal">
+                    </div>
+                </div>
+            </section>
+        </body>
+    </html>
