@@ -1,0 +1,15 @@
+@import url(/css/style.css);
+
+.cashier {
+    background-color: var(--corTres);
+}
+
+.view {
+    width: 100%;
+    background-color: var(--corUm);
+}
+
+.infos {
+    width: 100%;
+    background-color: var(--corDois);
+}

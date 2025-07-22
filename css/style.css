@@ -5,12 +5,21 @@
 
 :root {
   --corFundo: #000000;
+  --corUm: #8ce436;
+  --corDois: #fff352;
+  --corTres: #0bf4f3;
 }
 
 body {
-    height: 100vh;
-    background-color: var(--corFundo);
-    color: #FFFFFF;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1rem;
+  height: 100vh;
+  background-color: var(--corFundo);
+  color: #FFFFFF;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
 }
