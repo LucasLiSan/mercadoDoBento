@@ -8,40 +8,61 @@
         </head>
         <body>
             <section class="cashier">
-                <h1>CAIXA</h1>
+                <h1 class="titleCashier">CAIXA</h1>
                 <div class="view">
                     <div class="prodImg">
                         <img src="assets/imgs/barcode-scan.png" alt="">
                     </div>
                     <div class="list">
                         <div class="list-buy">
-                            lista
+                            <div class="itemDescription itemDescription-1">
+                                <span>7896311709533</span>
+                                <span>WHEY PROTEIN MORANGO</span>
+                                <span>2</span>
+                                <span>R$ 100,00</span>
+                                <span>R$ 200,00</span>
+                            </div>
+                            <div class="itemDescription itemDescription-2">
+                                <span>7896311709533</span>
+                                <span>WHEY PROTEIN MORANGO</span>
+                                <span>2</span>
+                                <span>R$ 100,00</span>
+                                <span>R$ 200,00</span>
+                            </div>
+                            <div class="itemDescription itemDescription-3">
+                                <span>7896311709533</span>
+                                <span>WHEY PROTEIN MORANGO</span>
+                                <span>2</span>
+                                <span>R$ 100,00</span>
+                                <span>R$ 200,00</span>
+                            </div>
                         </div>
                         <div class="total-buy">
-                            total
+                            <label for="total-pay">TOTAL A PAGAR</label>
+                            <input type="number" name="total-pay" value="600.00" id="total-pay" class="total-pay" disabled>
                         </div>
                     </div>
                 </div>
                 <div class="infos">
                     <div class="barCodeGroup">
                         <label for="barCode">Código de Barra</label>
-                        <input type="text" name="barCode" id="barCode">
+                        <input type="text" name="barCode" id="barCode" value="7896311709533" disabled>
                     </div>
                     <div class="itemGroup">
                         <label for="itemName">Item</label>
-                        <input type="text" name="itemName" id="itemName">
+                        <input type="text" name="itemName" id="itemName" value="WHEY PROTEIN MORANGO" disabled>
                     </div>
                     <div class="qtdGroup">
                         <label for="qtdItem">Quantidade</label>
-                        <input type="number" name="qtdItem" id="qtdItem">
+                        <input type="number" name="qtdItem" id="qtdItem" value="2" disabled>
                     </div>
                     <div class="priceGroup">
                         <label for="priceItem">Preço do produto</label>
-                        <input type="number" name="priceItem" id="priceItem">
+                        <input type="number" name="priceItem" id="priceItem" value="100.00" disabled>
                     </div>
                     <div class="totalGroup">
                         <label for="priceTotal">Total a pagar item</label>
-                        <input type="number" name="priceTotal" id="priceTotal">
+                        <input type="number" name="priceTotal" id="priceTotal" value="200.00" disabled>
                     </div>
                 </div>
             </section>
