@@ -8,64 +8,56 @@
     justify-content: flex-start;
 }
 
-.titleCashier {
-    width: 30rem;
-    height: 10%;
-    text-align: start;
-    align-content: center;
-    font-size: 3rem;
-}
-
 .view {
-    width: 100%;
-    height: 60%;
+    align-items: center;
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    height: 60%;
     justify-content: space-evenly;
-    align-items: center;
+    padding: 10px;
+    width: 100%;
 }
 
 .prodImg {
-    width: 25%;
-    height: 95%;
     align-content: center;
-    text-align: center;
     border: dashed #000000 3px;
+    height: 95%;
+    text-align: center;
+    width: 25%;
 }
 
 .prodImg img { width: 250px; }
 
 .list {
-    width: 65%;
-    height: 95%;
-    padding: 2px;
+    align-content: space-between;
     border: solid #000000 3px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: space-between;
+    height: 95%;
+    padding: 2px;
+    width: 65%;
 }
 
 .list-buy {
-    width: 100%;
-    height: 75%;
-    overflow: auto;
+    align-content: flex-start;
+    align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: flex-start;
-    align-items: center;
+    height: 75%;
+    overflow: auto;
+    width: 100%;
 }
 
 .itemDescription {
-    width: 100%;
-    height: 3rem;
-    text-transform: uppercase;
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    height: 3rem;
     justify-content: space-around;
+    text-transform: uppercase;
+    width: 100%;
 }
 
 .itemDescription:nth-child(odd) { background-color: var(--corDois); }
@@ -73,132 +65,90 @@
 .itemDescription:hover { background-color: var(--corUm); }
 
 .total-buy {
-    width: 100%;
-    height: 20%;
-    padding-right: 5px;
-    display: flex;
     align-content: center;
     background-color: var(--corUm);
+    display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    height: 20%;
+    padding-right: 5px;
+    width: 100%;
 }
 
 .total-buy label {
-    width: 15rem;
+    align-content: center;
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: bold;
     height: 3rem;
     text-align: end;
-    font-size: 1.5rem;
-    color: #000000;
     padding-right: 10px;
-    align-content: center;
-    font-weight: bold;
+    width: 15rem;
 }
 
 .total-pay {
-    width: 15rem;
     background-color: #ffffffdb;
     border: none;
     border-radius: 1rem;
-    text-align: center;
+    color: #000000;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #000000;
+    text-align: center;
+    width: 15rem;
 }
 
 .infos {
-    width: 100%;
-    height: 25%;
-    display: grid;
     align-items: center;
+    display: grid;
     grid-template-areas:
         "codBar itemDesc itemDesc"
         "itemPreco qtdItem totalProd"
     ;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50% 50%;
+    height: 25%;
+    width: 100%;
 }
 
-.barCodeGroup {
-    width: 100%;
-    height: 100%;
+.barCodeGroup, .itemGroup,
+.qtdGroup, .totalGroup {
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     grid-area: codBar;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    align-content: center;
+    height: 100%;
     justify-content: center;
+    text-align: center;
+    width: 100%;
 }
 
-.itemGroup {
-    grid-area: itemDesc;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-}
-
-.qtdGroup {
-    grid-area: itemPreco;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-}
-
-.priceGroup {
-    grid-area: qtdItem;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-}
-
-.totalGroup {
-    grid-area: totalProd;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-}
+.itemGroup { grid-area: itemDesc; }
+.qtdGroup { grid-area: itemPreco; }
+.priceGroup { grid-area: qtdItem; }
+.totalGroup { grid-area: totalProd; }
 
 .barCodeGroup label, .itemGroup label,
 .qtdGroup label, .priceGroup label,
 .totalGroup label {
-    width: 20rem;
-    text-transform: uppercase;
     font-weight: bold;
     font-size: 1.3rem;
     text-align: center;
+    text-transform: uppercase;
+    width: 20rem;
 }
 
 .barCodeGroup input, .itemGroup input,
 .qtdGroup input, .priceGroup input,
 .totalGroup input {
-    height: 2.5rem;
-    font-size: 2rem;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 1rem;
-    border: none;
     background-color: #ffffff;
+    border: none;
+    border-radius: 1rem;
     color: #000000;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 2.5rem;
+    text-align: center;
 }
 
 .barCodeGroup input, .totalGroup input { width: 20rem; }
